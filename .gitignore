@@ -1,0 +1,7 @@
+*.pyc
+__pycache__
+htmlcov
+.coverage
+/sent_emails
+.idea
+/images/profile.jpg

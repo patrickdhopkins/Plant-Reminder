@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<p>plants!!</p>
+<p>{{ plant.name }}</p>
+<p>{{ plant.period }}</p>
+<section class="jumbotron text-center">
+    <img src="{{ plant.image.url }}" height=300>
+</section>
+<p>{{ plant.pub_date }}</p>
+<p>{{ plant.instructions }}</p>
+
+{% if user.is_authenticated %}
+    <p><a href="{% url 'logout' %}">logout</a></p>
+    <p><a href="{% url 'password_reset' %}">reset password</a></p>
+{% endif %}
+</html>
